@@ -15,7 +15,7 @@
     <div class="">
       <p class="font-bold text-xl">Find out how many characters your name is made up of!</p>
       <div class="flex py-3">
-        <input type="text" v-model="name" class="text-gray-400 px-6 py-2 rounded-xl text-sm" placeholder="Enter your name">
+        <input type="text" v-model="name" class="text-gray-400 px-6 py-2 rounded-xl text-sm focus:outline-none" placeholder="Enter your name">
       </div>
       <p v-if="name == '' "></p>
       <p v-else="!name = '' ">{{ name }} has ({{ name.length }}) characters</p>
